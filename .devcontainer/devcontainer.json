@@ -12,5 +12,6 @@
                 "Dart-Code.flutter"
             ]
         }
-    }
+    },
+    "remoteUser": "node"
 }
