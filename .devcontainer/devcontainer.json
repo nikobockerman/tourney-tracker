@@ -1,0 +1,16 @@
+{
+    "name": "AmplifyFlutter",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/aws-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Dart-Code.flutter"
+            ]
+        }
+    }
+}
