@@ -11,10 +11,10 @@ updates:
     schedule:
       interval: weekly
   - package-ecosystem: "npm"
-    directory: "/tourney_tracker"
+    directory: "/"
     schedule:
       interval: weekly
   - package-ecosystem: "pub"
-    directory: "/tourney_tracker"
+    directory: "/"
     schedule:
       interval: weekly
