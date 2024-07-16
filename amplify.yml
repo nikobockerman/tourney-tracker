@@ -16,6 +16,7 @@ frontend:
         - 'export PATH="$PWD/flutter/bin:$PATH"'
     build:
       commands:
+        - 'npx ampx generate outputs --format dart --out-dir lib --branch $AWS_BRANCH --app-id $AWS_APP_ID'
         - 'npx ampx generate graphql-client-code --format modelgen --model-target dart --out lib/models --branch $AWS_BRANCH --app-id $AWS_APP_ID'
         - 'flutter build web'
   artifacts:
