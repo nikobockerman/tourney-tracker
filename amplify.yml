@@ -1,25 +1,22 @@
 version: 1
 backend:
   phases:
-    preBuild:
-      commands:
-        - 'npm ci --cache .npm --prefer-offline'
     build:
       commands:
-        - 'npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID'
+        - npm ci --cache .npm --prefer-offline
+        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
-    preBuild:
-      commands:
-        - 'wget -q -O flutter_linux-stable.tar.xz https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.22.2-stable.tar.xz'
-        - 'tar -xf flutter_linux-stable.tar.xz'
-        - 'export PATH="$PWD/flutter/bin:$PATH"'
     build:
       commands:
-        - 'npx ampx generate outputs --format dart --out-dir lib --branch $AWS_BRANCH --app-id $AWS_APP_ID'
-        - 'npx ampx generate graphql-client-code --format modelgen --model-target dart --out lib/models --branch $AWS_BRANCH --app-id $AWS_APP_ID'
-        - 'flutter build web'
+        - npm install -g @angular/cli
+        - ng version
+        - ng build --configuration=production
   artifacts:
-    baseDirectory: build/web
+    baseDirectory: dist/amplify-angular-template/browser
     files:
       - '**/*'
+  cache:
+    paths:
+      - .npm/**/*
+      - node_modules/**/*
