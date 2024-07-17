@@ -29,7 +29,7 @@
     "@angular/cli": "^17.3.4",
     "@angular/compiler-cli": "^17.3.0",
     "@aws-amplify/backend": "^1.0.0",
-    "@aws-amplify/backend-cli": "^1.0.1",
+    "@aws-amplify/backend-cli": "^1.1.1",
     "@types/jasmine": "~5.1.0",
     "aws-cdk": "^2.137.0",
     "aws-cdk-lib": "^2.137.0",
