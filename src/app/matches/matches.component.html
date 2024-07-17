@@ -1,0 +1,10 @@
+<!-- matches.component.html -->
+<main>
+  <h1>My matches</h1>
+  <button (click)="createMatch()">+ new</button>
+  <ul>
+    <li *ngFor="let match of matches;" (click)="deleteMatch(match.id)">
+      {{ match.teamHome }} - {{ match.teamAway }} - {{ match.startTime | date:'long' }}
+    </li>
+  </ul>
+</main>
