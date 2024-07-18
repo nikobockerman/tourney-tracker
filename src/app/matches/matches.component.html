@@ -3,8 +3,11 @@
   <h1>My matches</h1>
   <button (click)="createMatch()">+ new</button>
   <ul>
-    <li *ngFor="let match of matches;" (click)="deleteMatch(match.id)">
-      {{ match.teamHome }} - {{ match.teamAway }} - {{ match.startTime | date:'long' }}
+    @for (match of matches; track match.id) {
+    <li>
+      <span>{{ match.teamHome }} - {{ match.teamAway }} - {{ match.startTime | date:'long' }}</span>
+      <button (click)="deleteMatch(match.id)">X</button>
     </li>
+    }
   </ul>
 </main>
