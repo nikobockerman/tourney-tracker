@@ -1,0 +1,19 @@
+name: Deploy Dev
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  deploy_dev:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: Deploy main branch to AWS Dev
+        env:
+          AWS_DEV_DEPLOY_AMPLIFY_WEBHOOK_ID: ${{ secrets.AWS_DEV_DEPLOY_AMPLIFY_WEBHOOK_ID }}
+          AWS_DEV_DEPLOY_TRIGGER_TOKEN: ${{ secrets.AWS_DEV_DEPLOY_TRIGGER_TOKEN }}
+        run: >
+          curl -X POST -d {}
+          "https://webhooks.amplify.eu-north-1.amazonaws.com/prod/webhooks?id=${AWS_DEV_DEPLOY_AMPLIFY_WEBHOOK_ID}&token=${AWS_DEV_DEPLOY_TRIGGER_TOKEN}&operation=startbuild"
+          -H "Content-Type:application/json"
