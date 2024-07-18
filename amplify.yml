@@ -9,9 +9,8 @@ frontend:
   phases:
     build:
       commands:
-        - npm install -g @angular/cli
-        - ng version
-        - ng build --configuration=production
+        - npx ng version
+        - npx ng build --configuration=production
   artifacts:
     baseDirectory: dist/tourney-tracker/browser
     files:
