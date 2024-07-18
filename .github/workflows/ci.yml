@@ -1,15 +1,16 @@
-name: ESLint
+name: CI
 
 on:
-  workflow_call:
   workflow_dispatch:
   push:
     branches:
-      - create-github-actions
-
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  analyze:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
