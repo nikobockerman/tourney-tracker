@@ -13,7 +13,7 @@ const client = generateClient<Schema>();
   styleUrl: './matches.component.css',
 })
 export class MatchesComponent implements OnInit {
-  matches: any[] = [];
+  matches: Schema["Match"]["type"][] = [];
 
   ngOnInit(): void {
     this.listMatches();
@@ -22,12 +22,15 @@ export class MatchesComponent implements OnInit {
   listMatches() {
     try {
       client.models.Match.observeQuery().subscribe({
-        next: ({ items, isSynced }) => {
+        next: ({ items }) => {
           this.matches = items;
+        },
+        error: (error) => {
+          console.error('error fetching matches', error);
         },
       });
     } catch (error) {
-      console.error('error fetching matches', error);
+      console.error('error creating observer for matches', error);
     }
   }
 
