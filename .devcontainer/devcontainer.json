@@ -6,6 +6,9 @@
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {}
   },
+  "containerEnv": {
+    "NG_SERVE_HOST_ARG": "--host=::"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
