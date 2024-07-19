@@ -1,53 +1,56 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Observable, catchError, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { generateClient } from 'aws-amplify/data';
 import type { Schema } from '../../../amplify/data/resource';
-
-const client = generateClient<Schema>();
 
 @Component({
   selector: 'app-matches',
   standalone: true,
   imports: [CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './matches.component.html',
   styleUrl: './matches.component.css',
 })
 export class MatchesComponent implements OnInit {
-  matches: Schema["Match"]["type"][] = [];
+  matches: Observable<Schema["Match"]["type"][]> | null = null;
+
+  private matchesClient = generateClient<Schema>();
 
   ngOnInit(): void {
-    this.listMatches();
+    this.observeMatches();
   }
 
-  listMatches() {
+  observeMatches() {
     try {
-      client.models.Match.observeQuery().subscribe({
-        next: ({ items }) => {
-          this.matches = items;
-        },
-        error: (error) => {
-          console.error('error fetching matches', error);
-        },
-      });
+      this.matches = this.matchesClient.models.Match.observeQuery()
+        .pipe(
+          map(
+            ({ items }) => items),
+          catchError((error, caught) => { console.error('error fetching matches', error); return caught })
+        );
     } catch (error) {
       console.error('error creating observer for matches', error);
     }
   }
 
-  createMatch() {
+  async createMatch() {
     try {
-      client.models.Match.create({
+      await this.matchesClient.models.Match.create({
         teamHome: 'Team 1',
         teamAway: 'Team 2',
         startTime: new Date().toISOString(),
       });
-      this.listMatches();
     } catch (error) {
       console.error('error creating match', error);
     }
   }
 
-  deleteMatch(id: string) {
-    client.models.Match.delete({ id });
+  async deleteMatch(id: string) {
+    try {
+      await this.matchesClient.models.Match.delete({ id });
+    } catch (error) {
+      console.error('error deleting match', error);
+    }
   }
 }
