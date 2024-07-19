@@ -3,7 +3,7 @@
   <h1>My matches</h1>
   <button (click)="createMatch()">+ new</button>
   <ul>
-    @for (match of matches; track match.id) {
+    @for (match of matches | async; track match.id) {
     <li>
       <span>{{ match.teamHome }} - {{ match.teamAway }} - {{ match.startTime | date:'long' }}</span>
       <button (click)="deleteMatch(match.id)">X</button>
