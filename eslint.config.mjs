@@ -14,7 +14,7 @@ export default tseslint.config(
     extends: [
       eslintConfigs.all,
       ...tseslint.configs.strictTypeChecked,
-      ...tseslint.configs.stylistic,
+      ...tseslint.configs.stylisticTypeChecked,
       ...angular.configs.tsAll,
     ],
     languageOptions: {
