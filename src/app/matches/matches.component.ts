@@ -2,15 +2,16 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable, catchError, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { generateClient } from 'aws-amplify/data';
+
 import type { Schema } from '../../../amplify/data/resource';
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule],
   selector: 'app-matches',
   standalone: true,
-  imports: [CommonModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './matches.component.html',
   styleUrl: './matches.component.css',
+  templateUrl: './matches.component.html',
 })
 export class MatchesComponent implements OnInit {
   matches: Observable<Schema["Match"]["type"][]> | null = null;
@@ -37,9 +38,9 @@ export class MatchesComponent implements OnInit {
   async createMatch() {
     try {
       await this.matchesClient.models.Match.create({
-        teamHome: 'Team 1',
-        teamAway: 'Team 2',
         startTime: new Date().toISOString(),
+        teamAway: 'Team 2',
+        teamHome: 'Team 1',
       });
     } catch (error) {
       console.error('error creating match', error);

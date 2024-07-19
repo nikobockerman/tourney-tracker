@@ -11,13 +11,27 @@ module.exports = tseslint.config(
   {
     files: ["**/*.ts"],
     extends: [
-      eslint.configs.recommended,
+      eslint.configs.all,
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsAll,
     ],
     processor: angular.processInlineTemplates,
     rules: {
+      "new-cap": [
+        "error", { "capIsNew": false }
+      ],
+      "no-console": [
+        "error", { allow: ["warn", "error"] }
+      ],
+      "one-var": [
+        "error", "never"
+      ],
+      "sort-imports": [
+        "error", {
+          "allowSeparatedGroups": true,
+        }
+      ],
       "@angular-eslint/directive-selector": [
         "error",
         {
