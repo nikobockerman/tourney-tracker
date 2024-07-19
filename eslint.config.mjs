@@ -13,10 +13,16 @@ export default tseslint.config(
     files: ["**/*.ts"],
     extends: [
       eslintConfigs.all,
-      ...tseslint.configs.recommended,
+      ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsAll,
     ],
+    languageOptions: {
+      parserOptions: {
+        project: true,
+        tsconfigRootDir: import.meta.dirname,
+      }
+    },
     processor: angular.processInlineTemplates,
     rules: {
       "new-cap": [
