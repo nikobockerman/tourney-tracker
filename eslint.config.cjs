@@ -6,7 +6,7 @@ const angular = require("angular-eslint");
 
 module.exports = tseslint.config(
   {
-    ignores: [".amplify/", ".dist/"],
+    ignores: [".amplify/", "dist/"],
   },
   {
     files: ["**/*.ts"],
