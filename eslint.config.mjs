@@ -1,17 +1,18 @@
 // @ts-check
 
-const eslint = require("@eslint/js");
-const tseslint = require("typescript-eslint");
-const angular = require("angular-eslint");
+import eslintPkg from "@eslint/js";
+import * as tseslint from "typescript-eslint";
+import * as angular from "angular-eslint";
+const { configs: eslintConfigs } = eslintPkg;
 
-module.exports = tseslint.config(
+export default tseslint.config(
   {
     ignores: [".amplify/", ".angular/", "dist/"],
   },
   {
     files: ["**/*.ts"],
     extends: [
-      eslint.configs.all,
+      eslintConfigs.all,
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsAll,
@@ -57,5 +58,5 @@ module.exports = tseslint.config(
       ...angular.configs.templateAccessibility,
     ],
     rules: {},
-  }
+  },
 );
