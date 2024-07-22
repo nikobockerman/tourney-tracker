@@ -19,6 +19,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm run format
       - run: echo '{}' > amplify_outputs.json
       - run: npm run lint
       - run: npm run build
