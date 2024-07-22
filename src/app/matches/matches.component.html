@@ -4,10 +4,13 @@
   <button type="button" (click)="createMatch()">+ new</button>
   <ul>
     @for (match of matches | async; track match.id) {
-    <li>
-      <span>{{ match.teamHome }} - {{ match.teamAway }} - {{ match.startTime | date:'long' }}</span>
-      <button type="button" (click)="deleteMatch(match.id)">X</button>
-    </li>
+      <li>
+        <span>
+          {{ match.teamHome }} - {{ match.teamAway }} -
+          {{ match.startTime | date: "long" }}
+        </span>
+        <button type="button" (click)="deleteMatch(match.id)">X</button>
+      </li>
     }
   </ul>
 </main>

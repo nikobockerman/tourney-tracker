@@ -14,7 +14,7 @@ frontend:
   artifacts:
     baseDirectory: dist/tourney-tracker/browser
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - .npm/**/*

@@ -7,7 +7,9 @@ const schema = a.schema({
       teamAway: a.string().required(),
       teamHome: a.string().required(),
     })
-    .authorization((allow) => [allow.owner().to(['create', 'read', 'update', 'delete'])]),
+    .authorization((allow) => [
+      allow.owner().to(['create', 'read', 'update', 'delete']),
+    ]),
 });
 
 export type Schema = ClientSchema<typeof schema>;

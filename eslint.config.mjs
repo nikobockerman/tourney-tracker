@@ -21,23 +21,18 @@ export default tseslint.config(
       parserOptions: {
         project: true,
         tsconfigRootDir: import.meta.dirname,
-      }
+      },
     },
     processor: angular.processInlineTemplates,
     rules: {
-      "new-cap": [
-        "error", { "capIsNew": false }
-      ],
-      "no-console": [
-        "error", { allow: ["warn", "error"] }
-      ],
-      "one-var": [
-        "error", "never"
-      ],
+      "new-cap": ["error", { capIsNew: false }],
+      "no-console": ["error", { allow: ["warn", "error"] }],
+      "one-var": ["error", "never"],
       "sort-imports": [
-        "error", {
-          "allowSeparatedGroups": true,
-        }
+        "error",
+        {
+          allowSeparatedGroups: true,
+        },
       ],
       "@angular-eslint/directive-selector": [
         "error",

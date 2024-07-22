@@ -1,4 +1,7 @@
-import { AmplifyAuthenticatorModule, AuthenticatorService } from '@aws-amplify/ui-angular';
+import {
+  AmplifyAuthenticatorModule,
+  AuthenticatorService,
+} from '@aws-amplify/ui-angular';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Amplify } from 'aws-amplify';
 import { RouterOutlet } from '@angular/router';
@@ -24,6 +27,6 @@ export class AppComponent {
   title = 'tourney-tracker';
 
   constructor(public auth: AuthenticatorService) {
-    Amplify.configure(outputs)
+    Amplify.configure(outputs);
   }
 }
