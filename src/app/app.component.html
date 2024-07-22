@@ -1,6 +1,6 @@
 <amplify-authenticator>
-  <ng-template amplifySlot="authenticated" let-user="user" let-signOut="signOut">
-    <app-matches></app-matches>
-    <button (click)="signOut()">Sign Out</button>
+  <ng-template let-user="user" let-signOut="signOut" amplifySlot="authenticated">
+    <app-matches />
+    <button type="button" (click)="signOut()">Sign Out</button>
   </ng-template>
 </amplify-authenticator>

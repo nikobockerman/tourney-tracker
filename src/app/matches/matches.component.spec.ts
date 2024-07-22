@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatchesComponent } from './matches.component';
 
 describe('MatchesComponent', () => {
-  let component: MatchesComponent;
-  let fixture: ComponentFixture<MatchesComponent>;
+  let component: MatchesComponent | null = null;
+  let fixture: ComponentFixture<MatchesComponent> | null = null;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
