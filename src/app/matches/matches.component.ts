@@ -14,7 +14,7 @@ import type { Schema } from '../../../amplify/data/resource';
   templateUrl: './matches.component.html',
 })
 export class MatchesComponent implements OnInit {
-  matches: Observable<Schema["Match"]["type"][]> | null = null;
+  matches: Observable<Schema['Match']['type'][]> | null = null;
 
   private matchesClient = generateClient<Schema>();
 
@@ -24,12 +24,13 @@ export class MatchesComponent implements OnInit {
 
   observeMatches() {
     try {
-      this.matches = this.matchesClient.models.Match.observeQuery()
-        .pipe(
-          map(
-            ({ items }) => items),
-          catchError((error, caught) => { console.error('error fetching matches', error); return caught })
-        );
+      this.matches = this.matchesClient.models.Match.observeQuery().pipe(
+        map(({ items }) => items),
+        catchError((error, caught) => {
+          console.error('error fetching matches', error);
+          return caught;
+        }),
+      );
     } catch (error) {
       console.error('error creating observer for matches', error);
     }
