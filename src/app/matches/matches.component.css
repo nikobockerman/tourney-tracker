@@ -1,0 +1,31 @@
+.matches {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.match {
+  flex: 1 1 0;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.match > div,
+.match > span {
+  display: block;
+}
+
+.match > div > .team {
+  font-weight: bold;
+}
+
+.match > div > .separator {
+  padding: 0 0.5rem;
+}
+
+.match .time {
+  font-style: italic;
+}
