@@ -44,7 +44,7 @@
     "@aws-amplify/backend-cli": "^1.0.1",
     "@eslint/compat": "^1.1.1",
     "@types/jasmine": "~5.1.0",
-    "@typescript-eslint/utils": "^8.0.1",
+    "@typescript-eslint/utils": "^8.1.0",
     "angular-eslint": "^18.1.0",
     "aws-cdk": "^2.137.0",
     "aws-cdk-lib": "^2.151.0",
