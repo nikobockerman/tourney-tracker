@@ -40,7 +40,7 @@
     "@angular-eslint/template-parser": "18.3.0",
     "@angular/cli": "^18.2.2",
     "@angular/compiler-cli": "^18.2.2",
-    "@aws-amplify/backend": "^1.0.5",
+    "@aws-amplify/backend": "^1.2.0",
     "@aws-amplify/backend-cli": "^1.2.5",
     "@eslint/compat": "^1.1.1",
     "@types/jasmine": "~5.1.0",
