@@ -17,17 +17,10 @@ updates:
     open-pull-requests-limit: 10
     groups:
       angular:
-        applies-to: version-updates
-        patterns:
-          - "@angular/*"
-          - "@angular-devkit/*"
-      angular-security:
-        applies-to: security-updates
         patterns:
           - "@angular/*"
           - "@angular-devkit/*"
       angular-eslint:
-        applies-to: version-updates
         patterns:
           - "@angular-eslint/*"
           - "angular-eslint"
