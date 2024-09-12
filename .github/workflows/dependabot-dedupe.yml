@@ -2,7 +2,7 @@ name: Dedupe Dependabot PRs
 
 on:
   push:
-    branches: ['dependabot/**']
+    branches: ["dependabot/**"]
 
 permissions:
   contents: write
