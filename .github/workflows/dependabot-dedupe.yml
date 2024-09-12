@@ -1,0 +1,33 @@
+name: Dedupe Dependabot PRs
+
+on:
+  push:
+    branches: ['dependabot/**']
+
+permissions:
+  contents: write
+  pull-requests: write
+  repository-projects: write
+
+jobs:
+  dedupe:
+    name: Dedupe Dependabot PRs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Configure Git
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Dedupe dependencies
+        run: npm dedupe
+      - name: Commit changes
+        run: |
+          git add package-lock.json
+          git commit -m '[dependabot skip] Dedupe dependencies'
+      - name: Push changes
+        run: git push
