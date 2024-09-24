@@ -28,3 +28,7 @@ updates:
         patterns:
           - "@aws-amplify/backend"
           - "@aws-amplify/backend-cli"
+      aws-cdk:
+        patterns:
+          - "aws-cdk"
+          - "aws-cdk-lib"
