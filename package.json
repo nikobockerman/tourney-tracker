@@ -41,7 +41,7 @@
     "@angular/cli": "^18.2.5",
     "@angular/compiler-cli": "^18.2.5",
     "@aws-amplify/backend": "^1.2.1",
-    "@aws-amplify/backend-cli": "^1.2.6",
+    "@aws-amplify/backend-cli": "^1.2.8",
     "@eslint/compat": "^1.1.1",
     "@types/jasmine": "~5.1.0",
     "angular-eslint": "^18.2.0",
