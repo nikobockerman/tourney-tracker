@@ -11,7 +11,7 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["angular.ng-template", "spacegray.editorconfig-dev"],
+      "extensions": ["angular.ng-template", "editorconfig.editorconfig"],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       }
