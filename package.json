@@ -41,7 +41,7 @@
     "@angular/cli": "18.2.11",
     "@angular/compiler-cli": "18.2.10",
     "@aws-amplify/backend": "1.6.2",
-    "@aws-amplify/backend-cli": "1.4.0",
+    "@aws-amplify/backend-cli": "1.4.1",
     "@types/jasmine": "5.1.4",
     "angular-eslint": "18.4.0",
     "aws-cdk": "2.165.0",
