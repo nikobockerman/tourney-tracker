@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --check .",
-    "format:fix": "npm run format -- --write"
+    "format:fix": "npm run format -- --write",
+    "renovate:config": "npx --yes --package renovate -- renovate-config-validator --strict"
   },
   "private": true,
   "engines": {
