@@ -15,5 +15,10 @@
       matchPackageNames: ["zone.js"],
       allowedVersions: "~0.14.10",
     },
+    {
+      description: "Prevent updating typescript to next minor version",
+      matchPackageNames: ["typescript"],
+      allowedVersions: "~5.5.4",
+    },
   ],
 }
