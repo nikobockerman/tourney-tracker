@@ -13,7 +13,7 @@
     {
       description: "Prevent updating zone.js to next minor version",
       matchPackageNames: ["zone.js"],
-      allowedVersions: ["~0.14.10"],
+      allowedVersions: "~0.14.10",
     },
   ],
 }
