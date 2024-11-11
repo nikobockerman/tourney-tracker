@@ -8,10 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "yarn run lint -- --fix",
     "format": "prettier --check .",
-    "format:fix": "npm run format -- --write",
-    "renovate:config": "npx --yes --package renovate -- renovate-config-validator --strict"
+    "format:fix": "yarn run format -- --write",
+    "renovate:config": "yarn dlx -p renovate renovate-config-validator --strict"
   },
   "private": true,
   "engines": {
@@ -57,5 +57,6 @@
     "prettier": "3.3.3",
     "typescript": "5.5.4",
     "typescript-eslint": "8.14.0"
-  }
+  },
+  "packageManager": "yarn@4.5.1"
 }
