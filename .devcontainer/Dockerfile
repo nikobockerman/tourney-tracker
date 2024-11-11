@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm
+FROM mcr.microsoft.com/devcontainers/base:bookworm
 
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update \
@@ -7,3 +7,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 ENV CHROME_BIN=/usr/bin/chromium
+
+# Disable download prompt for Corepack
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
