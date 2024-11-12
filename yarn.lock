@@ -18012,6 +18012,11 @@ __metadata:
     typescript-eslint: "npm:8.14.0"
     zod: "npm:3.23.8"
     zone.js: "npm:0.14.10"
+  dependenciesMeta:
+    "@angular/cli":
+      unplugged: true
+    "@aws-amplify/ui-angular":
+      unplugged: true
   languageName: unknown
   linkType: soft
 
