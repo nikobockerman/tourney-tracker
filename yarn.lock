@@ -17985,6 +17985,7 @@ __metadata:
     "@aws-sdk/client-sso-oidc": "npm:3.687.0"
     "@aws-sdk/client-sts": "npm:3.687.0"
     "@aws-sdk/types": "npm:3.686.0"
+    "@eslint/js": "npm:9.14.0"
     "@types/jasmine": "npm:5.1.4"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
