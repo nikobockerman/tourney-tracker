@@ -21,6 +21,10 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
       - run: yarn dedupe --check
+      - name: Validate peer requirements are defined
+        run: |
+          reqs=$(yarn explain peer-requirements)
+          echo "$reqs" | grep -q '✘' && exit 1 || exit 0
       - run: yarn run format
       - run: yarn run renovate:config
       - run: echo '{}' > amplify_outputs.json
