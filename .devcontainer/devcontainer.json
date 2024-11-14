@@ -4,14 +4,27 @@
     "dockerfile": "Dockerfile"
   },
   "features": {
-    "ghcr.io/devcontainers/features/aws-cli:1": {}
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22",
+      "installYarnUsingApt": false
+    },
+    "ghcr.io/lukewiwa/features/shellcheck:0": {},
+    "./yarn-persistent-cache": {}
   },
+  "onCreateCommand": "sh .devcontainer/onCreate.sh",
+  "updateContentCommand": "yarn",
   "containerEnv": {
     "NG_SERVE_HOST_ARG": "--host=::"
   },
   "customizations": {
     "vscode": {
-      "extensions": ["angular.ng-template", "editorconfig.editorconfig"],
+      "extensions": [
+        "angular.ng-template",
+        "arcanis.vscode-zipfs",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig"
+      ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       }

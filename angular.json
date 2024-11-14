@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./.yarn/unplugged/@angular-cli-npm-18.2.11-3b44cb082f/node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,7 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "node_modules/@aws-amplify/ui-angular/theme.css",
+              ".yarn/unplugged/@aws-amplify-ui-angular-virtual-2d32fc85a2/node_modules/@aws-amplify/ui-angular/theme.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -98,6 +98,7 @@
   },
   "cli": {
     "analytics": false,
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": ["@angular-eslint/schematics"],
+    "packageManager": "yarn"
   }
 }

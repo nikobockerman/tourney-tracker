@@ -7,7 +7,7 @@ const { configs: eslintConfigs } = eslintPkg;
 
 export default tseslint.config(
   {
-    ignores: [".amplify/", ".angular/", "dist/"],
+    ignores: [".amplify/", ".angular/", "dist/", ".pnp.*", ".yarn/"],
   },
   {
     files: ["**/*.ts"],
