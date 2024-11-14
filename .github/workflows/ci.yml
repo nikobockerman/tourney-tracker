@@ -20,6 +20,10 @@ jobs:
           node-version: 22
           cache: yarn
       - run: yarn install --immutable
+      - name: Validate Yarn install does not contain errors
+        run: |
+          errors=$(yarn install --json | jq 'select(.displayName != "YN0000")' | jq -s 'length')
+          if [ "$errors" -gt 0 ]; then exit 1; fi
       - run: yarn dedupe --check
       - name: Validate peer requirements are defined
         run: |
