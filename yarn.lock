@@ -580,9 +580,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/analytics@npm:7.0.56":
-  version: 7.0.56
-  resolution: "@aws-amplify/analytics@npm:7.0.56"
+"@aws-amplify/analytics@npm:7.0.58":
+  version: 7.0.58
+  resolution: "@aws-amplify/analytics@npm:7.0.58"
   dependencies:
     "@aws-sdk/client-firehose": "npm:3.621.0"
     "@aws-sdk/client-kinesis": "npm:3.621.0"
@@ -591,45 +591,45 @@ __metadata:
     tslib: "npm:^2.5.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/b27763b8b8bb1a2d87f8edc9907f3bd7641b1f4dcebcc52b5c54d9c851812e185cbc1e888adb41524e7bd582fd70285a0301787cf4ba43013310f41181965171
+  checksum: 10c0/336b73bc9e307944bd591ac32205ad83548ecc10ca9805f64b560e03d420030c76085d5bd9a0fb7e82ff4ecd0dd76686bb5eba14c9916a6bab7cfe6cf6fbd8ba
   languageName: node
   linkType: hard
 
-"@aws-amplify/api-graphql@npm:4.5.1":
-  version: 4.5.1
-  resolution: "@aws-amplify/api-graphql@npm:4.5.1"
+"@aws-amplify/api-graphql@npm:4.6.1":
+  version: 4.6.1
+  resolution: "@aws-amplify/api-graphql@npm:4.6.1"
   dependencies:
-    "@aws-amplify/api-rest": "npm:4.0.56"
-    "@aws-amplify/core": "npm:6.5.1"
+    "@aws-amplify/api-rest": "npm:4.0.58"
+    "@aws-amplify/core": "npm:6.5.3"
     "@aws-amplify/data-schema": "npm:^1.7.0"
     "@aws-sdk/types": "npm:3.387.0"
     graphql: "npm:15.8.0"
     rxjs: "npm:^7.8.1"
     tslib: "npm:^2.5.0"
     uuid: "npm:^9.0.0"
-  checksum: 10c0/eea61b7fb10b606755a9f33c14ff0e4f648610c4b72fb18a071860b1e199eff02dc4949ac6f930600f818015d5f63dcfc87a4e967b38c78bb1e90e43129ea95a
+  checksum: 10c0/cade05f4f28502ba0fe59c2df91bd69a5ca84f4e731c87a67bc23fc09ee67defa0ba7996e0246c812e8dbae594cf421053f92a141accf48b1d5b6979d9b2e6e4
   languageName: node
   linkType: hard
 
-"@aws-amplify/api-rest@npm:4.0.56":
-  version: 4.0.56
-  resolution: "@aws-amplify/api-rest@npm:4.0.56"
+"@aws-amplify/api-rest@npm:4.0.58":
+  version: 4.0.58
+  resolution: "@aws-amplify/api-rest@npm:4.0.58"
   dependencies:
     tslib: "npm:^2.5.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/c5705a78e78bb862808553a7827307056dcfa2b455dbcf1aa3de7bf149f81770f4d5dc1a9f46ba76e674486490f358c0574b482a649af98116b8eaf9686adcd3
+  checksum: 10c0/bdf0136670fed346b2da638f635de9b1672fd3617d10013f28e9e7c93cf216bd219de9b69391fb9261955b4591dd54a185a32e7c96d878527132e27c23c2b396
   languageName: node
   linkType: hard
 
-"@aws-amplify/api@npm:6.1.1":
-  version: 6.1.1
-  resolution: "@aws-amplify/api@npm:6.1.1"
+"@aws-amplify/api@npm:6.1.3":
+  version: 6.1.3
+  resolution: "@aws-amplify/api@npm:6.1.3"
   dependencies:
-    "@aws-amplify/api-graphql": "npm:4.5.1"
-    "@aws-amplify/api-rest": "npm:4.0.56"
+    "@aws-amplify/api-graphql": "npm:4.6.1"
+    "@aws-amplify/api-rest": "npm:4.0.58"
     tslib: "npm:^2.5.0"
-  checksum: 10c0/3796514b837c40c995dc4882ab2ac0af7b9981eb25ef765214c358bee63a51ab811fa05bcab2963fb558fd88d92e336ff2550b0feb94123789f916d856ea2e5b
+  checksum: 10c0/27c6d567e1b2ba971df61161d77d13a627e09b125d2aa4c990857a33ce3b3c0cd7742b5d3a56876a1a95346e4b7d787e41b8e49ee976b5f6c7c0d7bf5db50bda
   languageName: node
   linkType: hard
 
@@ -688,14 +688,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/auth@npm:6.6.0":
-  version: 6.6.0
-  resolution: "@aws-amplify/auth@npm:6.6.0"
+"@aws-amplify/auth@npm:6.6.2":
+  version: 6.6.2
+  resolution: "@aws-amplify/auth@npm:6.6.2"
   dependencies:
     tslib: "npm:^2.5.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/6c284c15ccccbec56b30853afa3a7c314c9716904ae4744b57852dc4d41dfceed9c5b4a428ebb56c25c4fdc805090a625b8f54780d47e2836aade495fe638003
+  checksum: 10c0/eb752f4890c469c588f68818fa510ee2064748ed4d6fb8668ab383a2a43ff70a8f3ab09196771704422ddcc3ed56bc767719a346eae2961effd0da087040aeaf
   languageName: node
   linkType: hard
 
@@ -929,22 +929,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/core@npm:6.5.1":
-  version: 6.5.1
-  resolution: "@aws-amplify/core@npm:6.5.1"
-  dependencies:
-    "@aws-crypto/sha256-js": "npm:5.2.0"
-    "@aws-sdk/types": "npm:3.398.0"
-    "@smithy/util-hex-encoding": "npm:2.0.0"
-    "@types/uuid": "npm:^9.0.0"
-    js-cookie: "npm:^3.0.5"
-    rxjs: "npm:^7.8.1"
-    tslib: "npm:^2.5.0"
-    uuid: "npm:^9.0.0"
-  checksum: 10c0/814a8be039069924042e83b9b35d0173f4e341f9deec08274d47c792dd89b8da7ac4ab754a7e322ecf860f54935e2da16c6cc2337610384f3964f2401a106e80
-  languageName: node
-  linkType: hard
-
 "@aws-amplify/core@npm:6.5.2":
   version: 6.5.2
   resolution: "@aws-amplify/core@npm:6.5.2"
@@ -958,6 +942,22 @@ __metadata:
     tslib: "npm:^2.5.0"
     uuid: "npm:^9.0.0"
   checksum: 10c0/fcddd192c45b0f5af7356144416668b0da21503f3a06fb878a01f8ebceae3157ce7a290cf3d89ff3b911ccf5e69e948ddf01550b7b98a33c60560f9bbe965862
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/core@npm:6.5.3":
+  version: 6.5.3
+  resolution: "@aws-amplify/core@npm:6.5.3"
+  dependencies:
+    "@aws-crypto/sha256-js": "npm:5.2.0"
+    "@aws-sdk/types": "npm:3.398.0"
+    "@smithy/util-hex-encoding": "npm:2.0.0"
+    "@types/uuid": "npm:^9.0.0"
+    js-cookie: "npm:^3.0.5"
+    rxjs: "npm:^7.8.1"
+    tslib: "npm:^2.5.0"
+    uuid: "npm:^9.0.0"
+  checksum: 10c0/f17cbb6133005a6008f5f129dc4ef9bbe1b17a3e96b03fd2bf35b1f88d3fb93d4b33e104b5a414c2f7a3bea78df0255a03811a57ef254e9d55b656aca64121a6
   languageName: node
   linkType: hard
 
@@ -1118,11 +1118,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/datastore@npm:5.0.58":
-  version: 5.0.58
-  resolution: "@aws-amplify/datastore@npm:5.0.58"
+"@aws-amplify/datastore@npm:5.0.60":
+  version: 5.0.60
+  resolution: "@aws-amplify/datastore@npm:5.0.60"
   dependencies:
-    "@aws-amplify/api": "npm:6.1.1"
+    "@aws-amplify/api": "npm:6.1.3"
     buffer: "npm:4.9.2"
     idb: "npm:5.0.6"
     immer: "npm:9.0.6"
@@ -1130,7 +1130,7 @@ __metadata:
     ulid: "npm:^2.3.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/11a592df1725bcae1f82fb5969979f392e9e6774461cb747c283fae653ab49706c8448d93ff2d7bc1661243245c151059d3442c69833f7733ddbbe916ba7fd7c
+  checksum: 10c0/1b7d330b77f9ae0b78049bcc13cba73ec3f972edbee13a05280ec4f6f957d1628123fc77e9fc2cc5b64cb853dccfad6c521c1e74e5b244c605af4b1abfdf6731
   languageName: node
   linkType: hard
 
@@ -1714,15 +1714,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/notifications@npm:2.0.56":
-  version: 2.0.56
-  resolution: "@aws-amplify/notifications@npm:2.0.56"
+"@aws-amplify/notifications@npm:2.0.58":
+  version: 2.0.58
+  resolution: "@aws-amplify/notifications@npm:2.0.58"
   dependencies:
     lodash: "npm:^4.17.21"
     tslib: "npm:^2.5.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/3d6fabc88cfe2038395232dae3103d507a299ba3f596fa8acd9a211980b1a9c2f6eb58f2c21462316bcb8e62b28728642aada902b2a44f05d3c36ee95699d032
+  checksum: 10c0/f58917ffe265bc275b4636fdd70822ccde6e9c0e0ca625204b96587cc4839c6381e945025930b8b22a5127b1bd5f4071bb61716a6aef722bce4ff05e06a65e57
   languageName: node
   linkType: hard
 
@@ -1789,9 +1789,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/storage@npm:6.6.14":
-  version: 6.6.14
-  resolution: "@aws-amplify/storage@npm:6.6.14"
+"@aws-amplify/storage@npm:6.6.16":
+  version: 6.6.16
+  resolution: "@aws-amplify/storage@npm:6.6.16"
   dependencies:
     "@aws-sdk/types": "npm:3.398.0"
     "@smithy/md5-js": "npm:2.0.7"
@@ -1800,7 +1800,7 @@ __metadata:
     tslib: "npm:^2.5.0"
   peerDependencies:
     "@aws-amplify/core": ^6.1.0
-  checksum: 10c0/de6eb83daa2c5f1b06925aedeb130be15a5c2c00f0cee1eebf3aa511e6137b0b4ca8489534d1042162c708cef602a26bfafe484a3e7d89905f1d6cae2d420d60
+  checksum: 10c0/1d6afc10094ec9fb5eb9c1b74dc7a578c06dfaa51800a481c13cd1d759fc840635d4219d5cbccb187004a1bc913216da89a7929ea57a93f6dd0fba046274f5ea
   languageName: node
   linkType: hard
 
@@ -9610,19 +9610,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-amplify@npm:6.8.0":
-  version: 6.8.0
-  resolution: "aws-amplify@npm:6.8.0"
+"aws-amplify@npm:6.8.2":
+  version: 6.8.2
+  resolution: "aws-amplify@npm:6.8.2"
   dependencies:
-    "@aws-amplify/analytics": "npm:7.0.56"
-    "@aws-amplify/api": "npm:6.1.1"
-    "@aws-amplify/auth": "npm:6.6.0"
-    "@aws-amplify/core": "npm:6.5.1"
-    "@aws-amplify/datastore": "npm:5.0.58"
-    "@aws-amplify/notifications": "npm:2.0.56"
-    "@aws-amplify/storage": "npm:6.6.14"
+    "@aws-amplify/analytics": "npm:7.0.58"
+    "@aws-amplify/api": "npm:6.1.3"
+    "@aws-amplify/auth": "npm:6.6.2"
+    "@aws-amplify/core": "npm:6.5.3"
+    "@aws-amplify/datastore": "npm:5.0.60"
+    "@aws-amplify/notifications": "npm:2.0.58"
+    "@aws-amplify/storage": "npm:6.6.16"
     tslib: "npm:^2.5.0"
-  checksum: 10c0/a7700aab8464b8d5b59290a7c2bd1b11a74c7cf4fdcdaa0bcee3bd805886f9568dff4c2184a817be93efcca645116b1d237462fab055d08a4131636edc8da2d6
+  checksum: 10c0/5b2267d1d828b291145f36ceca696dc134b05a2afa61eeac020b8df676074e6873d32ae2da88cc31138a882ea8190270d033175d02fcbcc2b302d67c1483beee
   languageName: node
   linkType: hard
 
@@ -17905,7 +17905,7 @@ __metadata:
     "@typescript-eslint/types": "npm:8.14.0"
     "@typescript-eslint/utils": "npm:8.14.0"
     angular-eslint: "npm:18.4.0"
-    aws-amplify: "npm:6.8.0"
+    aws-amplify: "npm:6.8.2"
     aws-cdk: "npm:2.166.0"
     aws-cdk-lib: "npm:2.166.0"
     constructs: "npm:10.4.2"
