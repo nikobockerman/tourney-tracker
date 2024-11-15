@@ -4,7 +4,8 @@ backend:
     preBuild:
       commands:
         - corepack enable
-        - YARN_ENABLE_GLOBAL_CACHE=false yarn install --immutable
+        - yarn config set enableGlobalCache false
+        - yarn install --immutable
     build:
       commands:
         - yarn run ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
