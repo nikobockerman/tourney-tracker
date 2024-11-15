@@ -8,8 +8,9 @@ backend:
         - yarn install --immutable
     build:
       commands:
-        - which docker
         - find / -name docker
+        - npx docker --version
+        - which docker
         - yarn run ampx pipeline-deploy --debug --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
