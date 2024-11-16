@@ -4,14 +4,12 @@ backend:
     preBuild:
       commands:
         - sudo yum install -y docker
+        - sudo systemctl start docker
         - corepack enable
         - yarn config set enableGlobalCache false
         - yarn install --immutable
     build:
       commands:
-        - find / -name docker || true
-        - npx docker --version || true
-        - which docker || true
         - yarn run ampx pipeline-deploy --debug --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
