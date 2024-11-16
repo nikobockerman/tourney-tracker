@@ -3,20 +3,18 @@ backend:
   phases:
     preBuild:
       commands:
-        - sudo yum install -y docker
-        - sudo systemctl start docker
         - corepack enable
         - yarn config set enableGlobalCache false
         - yarn install --immutable
     build:
       commands:
-        - yarn run ampx pipeline-deploy --debug --branch $AWS_BRANCH --app-id $AWS_APP_ID
+        - yarn exec ampx pipeline-deploy --debug --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
     build:
       commands:
-        - yarn run ng version
-        - yarn run ng build --configuration=production
+        - yarn exec ng version
+        - yarn exec ng build --configuration=production
   artifacts:
     baseDirectory: dist/tourney-tracker/browser
     files:
