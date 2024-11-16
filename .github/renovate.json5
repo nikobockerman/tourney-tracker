@@ -4,6 +4,7 @@
   lockFileMaintenance: {
     enabled: true,
   },
+  postUpdateOptions: ["yarnDedupeHighest"],
   packageRules: [
     {
       description: "Disable docker pinning for devcontainer",
