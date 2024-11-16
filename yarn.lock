@@ -673,18 +673,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/auth-construct@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@aws-amplify/auth-construct@npm:1.4.0"
+"@aws-amplify/auth-construct@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@aws-amplify/auth-construct@npm:1.5.0"
   dependencies:
     "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-output-storage": "npm:^1.1.3"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
     "@aws-sdk/util-arn-parser": "npm:^3.568.0"
   peerDependencies:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
-  checksum: 10c0/33adcb4503af9a61ddfa4c9fa095f2703cc59f7b8ee5e01d29cf5e2ccc54cf52110b50341c64f1d75d1db4445f31f77182468616f597da106ea8714203f94df6
+  checksum: 10c0/8a4786771bedd5b3bdd733f95444f28f64d5c8acb686843b0503780b8a76bfecb00e0c7421eddf821d100296ee586f61cf8d01101053fd52e6b31c776c1f23b5
   languageName: node
   linkType: hard
 
@@ -699,17 +699,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/backend-auth@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@aws-amplify/backend-auth@npm:1.3.0"
+"@aws-amplify/backend-auth@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@aws-amplify/backend-auth@npm:1.4.0"
   dependencies:
-    "@aws-amplify/auth-construct": "npm:^1.4.0"
+    "@aws-amplify/auth-construct": "npm:^1.5.0"
+    "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-output-storage": "npm:^1.1.3"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
   peerDependencies:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
-  checksum: 10c0/5814aeb7e4f7f47f3571080436cfa25d1e3b8802c43ef78c6ffafb5b564023c2b8943cb8f400f205aa3955298d9063fa60048307f4440051f8c642a853975054
+  checksum: 10c0/02bb0ca5f253ccef403f42c10175a9ee0a304ba7372b3178fd7931991b0648e50a541eefe95224b4455dab19a8b423d569dbd26008de0a91385815511d6dc8a5
   languageName: node
   linkType: hard
 
@@ -752,19 +753,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/backend-data@npm:^1.1.7":
-  version: 1.1.7
-  resolution: "@aws-amplify/backend-data@npm:1.1.7"
+"@aws-amplify/backend-data@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@aws-amplify/backend-data@npm:1.2.0"
   dependencies:
     "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-output-storage": "npm:^1.1.3"
     "@aws-amplify/data-construct": "npm:^1.10.1"
     "@aws-amplify/data-schema-types": "npm:^1.2.0"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
   peerDependencies:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
-  checksum: 10c0/7896b5438838e2a018d2fcf473df697a39a5013c44d9f147e02e200a934e008735f14932006cb46648d0736faf3fbe07bf47aa9468822d8f6436f0c1a32c7379
+  checksum: 10c0/81a64145b728d81447f939dcef78480ffed453f81163be59c62acf065ae9ca0c0a529eedf005f960102a28cb1ad627ddc160c1e54633cbc56cb4edb6104c1f08
   languageName: node
   linkType: hard
 
@@ -783,18 +784,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/backend-function@npm:^1.7.4":
-  version: 1.7.4
-  resolution: "@aws-amplify/backend-function@npm:1.7.4"
+"@aws-amplify/backend-function@npm:^1.7.5":
+  version: 1.7.5
+  resolution: "@aws-amplify/backend-function@npm:1.7.5"
   dependencies:
     "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-output-storage": "npm:^1.1.3"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
     execa: "npm:^8.0.1"
   peerDependencies:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
-  checksum: 10c0/52d295f81650214475282ebd8e5f21b6916f821840c47621393664aaf149969989d608008699bfb95e74be8db437c6aca308a0b0ef605087bf3f1b5186cfcbd9
+  checksum: 10c0/673ce12a81bdfaa934946c98e3e7caf0ec5c08929b6ef2d65abe314dd8b5ee0275af6773cf261e1560b699ba5cf876a17cb7de19f9cc6afce7ccafbeac030b3d
   languageName: node
   linkType: hard
 
@@ -845,13 +846,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/backend@npm:1.6.2":
-  version: 1.6.2
-  resolution: "@aws-amplify/backend@npm:1.6.2"
+"@aws-amplify/backend@npm:1.7.0":
+  version: 1.7.0
+  resolution: "@aws-amplify/backend@npm:1.7.0"
   dependencies:
-    "@aws-amplify/backend-auth": "npm:^1.3.0"
-    "@aws-amplify/backend-data": "npm:^1.1.7"
-    "@aws-amplify/backend-function": "npm:^1.7.4"
+    "@aws-amplify/backend-auth": "npm:^1.4.0"
+    "@aws-amplify/backend-data": "npm:^1.2.0"
+    "@aws-amplify/backend-function": "npm:^1.7.5"
     "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-output-storage": "npm:^1.1.3"
     "@aws-amplify/backend-secret": "npm:^1.1.4"
@@ -859,13 +860,13 @@ __metadata:
     "@aws-amplify/client-config": "npm:^1.5.2"
     "@aws-amplify/data-schema": "npm:^1.0.0"
     "@aws-amplify/platform-core": "npm:^1.2.0"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
     "@aws-sdk/client-amplify": "npm:^3.624.0"
     lodash.snakecase: "npm:^4.1.1"
   peerDependencies:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
-  checksum: 10c0/c9f7085fff52b4d8a6c3fbde6c34504e3628972d937f2798a68ee899318ffff87c99e8f09011227f32734ce53caaae825b24ccb5d40d2d606becec3a447b032a
+  checksum: 10c0/f35a14da22b28e204d1c7cb9bb98a0c03f58d4dbe65726a7dc52b6000a51ad38c7dbc50bd81f756557323ea123a407cac30e34992e989ce8222d916fb28ca728
   languageName: node
   linkType: hard
 
@@ -1733,6 +1734,17 @@ __metadata:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
   checksum: 10c0/d8088598fd77100981ddbe3cdea3ef109266c949146aad70c37ba41ef054c3b4079bba0551fc3c5c1935a68e2cd6ce26a0b05750aec68c38a7d28310bfb04c0b
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/plugin-types@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@aws-amplify/plugin-types@npm:1.4.0"
+  peerDependencies:
+    "@aws-sdk/types": ^3.609.0
+    aws-cdk-lib: ^2.158.0
+    constructs: ^10.0.0
+  checksum: 10c0/67838487380c85cb79514d08518af7ecec4ea56b07bd2bb6c8530e1291d18510cc62a0c5e2ac27cfe431d0890ea7f751bfb90b77c6cd98d3ae9f5bf40ddebd07
   languageName: node
   linkType: hard
 
@@ -17873,7 +17885,7 @@ __metadata:
     "@angular/platform-browser": "npm:18.2.12"
     "@angular/platform-browser-dynamic": "npm:18.2.12"
     "@angular/router": "npm:18.2.12"
-    "@aws-amplify/backend": "npm:1.6.2"
+    "@aws-amplify/backend": "npm:1.7.0"
     "@aws-amplify/backend-cli": "npm:1.4.1"
     "@aws-amplify/core": "npm:6.5.3"
     "@aws-amplify/ui-angular": "npm:5.0.30"
