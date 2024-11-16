@@ -26,7 +26,7 @@
     "@angular/platform-browser": "18.2.11",
     "@angular/platform-browser-dynamic": "18.2.11",
     "@angular/router": "18.2.11",
-    "@aws-amplify/core": "6.5.2",
+    "@aws-amplify/core": "6.5.3",
     "@aws-amplify/ui-angular": "5.0.30",
     "aws-amplify": "6.8.2",
     "rxjs": "7.8.1",
