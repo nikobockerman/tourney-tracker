@@ -653,6 +653,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-amplify/appsync-modelgen-plugin@npm:2.15.1":
+  version: 2.15.1
+  resolution: "@aws-amplify/appsync-modelgen-plugin@npm:2.15.1"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": "npm:^3.1.1"
+    "@graphql-codegen/visitor-plugin-common": "npm:^1.22.0"
+    "@graphql-tools/utils": "npm:^6.0.18"
+    chalk: "npm:^3.0.0"
+    change-case: "npm:^4.1.1"
+    graphql-transformer-common: "npm:^4.25.1"
+    lower-case-first: "npm:^2.0.1"
+    pluralize: "npm:^8.0.0"
+    strip-indent: "npm:^3.0.0"
+    ts-dedent: "npm:^1.1.0"
+  peerDependencies:
+    graphql: ^15.5.0
+  checksum: 10c0/8786ee9ea708a6e07a6e8c6df56478b8b0be6af3e58eea1f40a8916005297be7c7eae435692c5cde240579131e2818b64d8caea8d78351a33e5e39d4c5a8b5f0
+  languageName: node
+  linkType: hard
+
 "@aws-amplify/appsync-modelgen-plugin@npm:^2.11.0":
   version: 2.15.0
   resolution: "@aws-amplify/appsync-modelgen-plugin@npm:2.15.0"
@@ -713,20 +733,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/backend-cli@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@aws-amplify/backend-cli@npm:1.4.1"
+"@aws-amplify/backend-cli@npm:1.4.2":
+  version: 1.4.2
+  resolution: "@aws-amplify/backend-cli@npm:1.4.2"
   dependencies:
-    "@aws-amplify/backend-deployer": "npm:^1.1.8"
+    "@aws-amplify/backend-deployer": "npm:^1.1.9"
     "@aws-amplify/backend-output-schemas": "npm:^1.4.0"
     "@aws-amplify/backend-secret": "npm:^1.1.2"
     "@aws-amplify/cli-core": "npm:^1.2.0"
     "@aws-amplify/client-config": "npm:^1.5.1"
     "@aws-amplify/deployed-backend-client": "npm:^1.4.1"
     "@aws-amplify/form-generator": "npm:^1.0.3"
-    "@aws-amplify/model-generator": "npm:^1.0.8"
+    "@aws-amplify/model-generator": "npm:^1.0.9"
     "@aws-amplify/platform-core": "npm:^1.2.0"
-    "@aws-amplify/plugin-types": "npm:^1.3.1"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
     "@aws-amplify/sandbox": "npm:^1.2.5"
     "@aws-amplify/schema-generator": "npm:^1.2.5"
     "@aws-sdk/client-amplify": "npm:^3.624.0"
@@ -748,7 +768,7 @@ __metadata:
   bin:
     amplify: lib/ampx.js
     ampx: lib/ampx.js
-  checksum: 10c0/5c1b0d719be2fbebce03aea4cb81aa25aed258f917a54a39fb427e9dfcbb4f42f7d6edf97a3ac8b7eca920672d3cf98c1d6b9b36d5ff041138b1dba7f46d6190
+  checksum: 10c0/7bd0e4dbfb74ad41099488e624126dc9c088f4b501ec0ae3a537b071fb323d8a5299f90fdfce29ee928f281c3af054d5a5a03cb8e63a57b17bbb0c33d31c9ead
   languageName: node
   linkType: hard
 
@@ -780,6 +800,21 @@ __metadata:
     aws-cdk: ^2.158.0
     typescript: ^5.0.0
   checksum: 10c0/640f351578b7b0729fae05fe6c0dbd98ae60ed2c31757fb03d4ce181e91a3866f6fa71a6cfc0acb359e0c516df54f1d880a35aa665b0a751b4055061a95b94a0
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/backend-deployer@npm:^1.1.9":
+  version: 1.1.9
+  resolution: "@aws-amplify/backend-deployer@npm:1.1.9"
+  dependencies:
+    "@aws-amplify/platform-core": "npm:^1.2.0"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
+    execa: "npm:^8.0.1"
+    tsx: "npm:^4.6.1"
+  peerDependencies:
+    aws-cdk: ^2.158.0
+    typescript: ^5.0.0
+  checksum: 10c0/f9a49e07230b39fa0708548a7a1f7fab01ca094e26d3b4f715a0268ed1597cc4b54372849de16bc6ecbfc50a750d59d31de1de090d187dc68f78e41a41b9c76f
   languageName: node
   linkType: hard
 
@@ -1426,6 +1461,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-amplify/graphql-generator@npm:^0.5.1":
+  version: 0.5.2
+  resolution: "@aws-amplify/graphql-generator@npm:0.5.2"
+  dependencies:
+    "@aws-amplify/appsync-modelgen-plugin": "npm:2.15.1"
+    "@aws-amplify/graphql-directives": "npm:^1.0.1"
+    "@aws-amplify/graphql-docs-generator": "npm:4.2.1"
+    "@aws-amplify/graphql-types-generator": "npm:3.6.0"
+    "@graphql-codegen/core": "npm:^2.6.6"
+    "@graphql-codegen/plugin-helpers": "npm:^3.1.1"
+    "@graphql-tools/apollo-engine-loader": "npm:^8.0.0"
+    "@graphql-tools/schema": "npm:^9.0.0"
+    "@graphql-tools/utils": "npm:^9.2.1"
+    graphql: "npm:^15.5.0"
+    prettier: "npm:^1.19.1"
+  checksum: 10c0/475391318a578c95fbbca367a12fc9e0b12ad167cd1690b9a53b9dacde2368413a8913030cbb1515a925eb235f65351ca0a02fee9e165464d33878e006cd6ce4
+  languageName: node
+  linkType: hard
+
 "@aws-amplify/graphql-http-transformer@npm:3.0.8":
   version: 3.0.8
   resolution: "@aws-amplify/graphql-http-transformer@npm:3.0.8"
@@ -1676,7 +1730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/model-generator@npm:^1.0.7, @aws-amplify/model-generator@npm:^1.0.8":
+"@aws-amplify/model-generator@npm:^1.0.7":
   version: 1.0.8
   resolution: "@aws-amplify/model-generator@npm:1.0.8"
   dependencies:
@@ -1695,6 +1749,28 @@ __metadata:
     "@aws-sdk/client-amplify": ^3.624.0
     "@aws-sdk/client-cloudformation": ^3.624.0
   checksum: 10c0/9c471b1e645c04df125e003c94c8d98f4f9a343fe2ad5e1988781cc4b2274697b080a0c05e55bcd565b30f9f543c8636725a0ed842aee532854c0a6fd3f3fb35
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/model-generator@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@aws-amplify/model-generator@npm:1.0.9"
+  dependencies:
+    "@aws-amplify/backend-output-schemas": "npm:^1.1.0"
+    "@aws-amplify/deployed-backend-client": "npm:^1.4.1"
+    "@aws-amplify/graphql-generator": "npm:^0.5.1"
+    "@aws-amplify/graphql-types-generator": "npm:^3.6.0"
+    "@aws-amplify/platform-core": "npm:^1.0.5"
+    "@aws-amplify/plugin-types": "npm:^1.4.0"
+    "@aws-sdk/client-appsync": "npm:^3.624.0"
+    "@aws-sdk/client-s3": "npm:^3.624.0"
+    "@aws-sdk/credential-providers": "npm:^3.624.0"
+    "@aws-sdk/types": "npm:^3.609.0"
+    graphql: "npm:^15.8.0"
+  peerDependencies:
+    "@aws-sdk/client-amplify": ^3.624.0
+    "@aws-sdk/client-cloudformation": ^3.624.0
+  checksum: 10c0/42b440617a0e52c3e31f5982fd1d88fac6a93316a8b4994068fda3c4f9af8a4909bf5a37c2954984ddef729dd5d493f852563da652b5cca539523388af18f123
   languageName: node
   linkType: hard
 
@@ -1733,6 +1809,17 @@ __metadata:
     aws-cdk-lib: ^2.158.0
     constructs: ^10.0.0
   checksum: 10c0/d8088598fd77100981ddbe3cdea3ef109266c949146aad70c37ba41ef054c3b4079bba0551fc3c5c1935a68e2cd6ce26a0b05750aec68c38a7d28310bfb04c0b
+  languageName: node
+  linkType: hard
+
+"@aws-amplify/plugin-types@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@aws-amplify/plugin-types@npm:1.4.0"
+  peerDependencies:
+    "@aws-sdk/types": ^3.609.0
+    aws-cdk-lib: ^2.158.0
+    constructs: ^10.0.0
+  checksum: 10c0/67838487380c85cb79514d08518af7ecec4ea56b07bd2bb6c8530e1291d18510cc62a0c5e2ac27cfe431d0890ea7f751bfb90b77c6cd98d3ae9f5bf40ddebd07
   languageName: node
   linkType: hard
 
@@ -17874,7 +17961,7 @@ __metadata:
     "@angular/platform-browser-dynamic": "npm:18.2.11"
     "@angular/router": "npm:18.2.11"
     "@aws-amplify/backend": "npm:1.6.2"
-    "@aws-amplify/backend-cli": "npm:1.4.1"
+    "@aws-amplify/backend-cli": "npm:1.4.2"
     "@aws-amplify/core": "npm:6.5.3"
     "@aws-amplify/ui-angular": "npm:5.0.30"
     "@aws-sdk/client-cloudformation": "npm:3.687.0"
