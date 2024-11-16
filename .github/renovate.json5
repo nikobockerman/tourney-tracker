@@ -11,6 +11,11 @@
       pinDigests: false,
     },
     {
+      description: "Group amplify backend and backend-cli together",
+      matchPackageNames: ["@aws-amplify/backend", "@aws-amplify/backend-cli"],
+      groupName: "amplify-backend",
+    },
+    {
       description: "Prevent updating zone.js to next minor version",
       matchPackageNames: ["zone.js"],
       allowedVersions: "~0.14.10",
