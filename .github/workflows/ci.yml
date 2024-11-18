@@ -36,9 +36,13 @@ jobs:
         run: yarn run renovate:config
       - name: Validate Yarn install does not contain errors
         run: |
-          yarn install
-          errors=$(yarn install --json | jq 'select(.displayName != "YN0000")' | jq -s 'length')
-          if [ "$errors" -gt 0 ]; then exit 1; fi
+          errors=$(yarn install --json | jq 'select(.displayName != "YN0000")')
+          error_count=$(echo "$errors" | jq -s 'length')
+          if [ "$error_count" -gt 0 ]; then
+            echo "Detected Yarn install errors: $error_count"
+            echo "$errors"
+            exit 1
+          fi
       - name: Check for duplicate dependencies
         run: yarn dedupe --check
       - name: Validate peer requirements are defined
