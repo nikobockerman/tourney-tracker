@@ -11,7 +11,7 @@
     "lint:fix": "yarn run lint -- --fix",
     "format": "prettier --check .",
     "format:fix": "yarn run format -- --write",
-    "renovate:config": "yarn dlx -p renovate renovate-config-validator --strict"
+    "renovate:config": "renovate-config-validator --strict"
   },
   "private": true,
   "engines": {
@@ -70,6 +70,7 @@
     "prettier": "3.3.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "renovate": "39.26.3",
     "tsx": "4.19.2",
     "typescript": "5.5.4",
     "typescript-eslint": "8.15.0",
