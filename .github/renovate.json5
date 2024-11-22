@@ -18,6 +18,12 @@
       groupName: "amplify-backend",
     },
     {
+      description: "Group angular and angular-cli together for major updates",
+      extends: ["monorepo:angular", "monorepo:angular-cli"],
+      matchUpdateTypes: ["major"],
+      groupName: "major-angular",
+    },
+    {
       description: "Prevent holding broken npm packages",
       matchDatasources: ["npm"],
       minimumReleaseAge: "3 days",
