@@ -2126,9 +2126,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-cloudformation@npm:3.693.0, @aws-sdk/client-cloudformation@npm:^3.624.0":
-  version: 3.693.0
-  resolution: "@aws-sdk/client-cloudformation@npm:3.693.0"
+"@aws-sdk/client-cloudformation@npm:3.695.0, @aws-sdk/client-cloudformation@npm:^3.624.0":
+  version: 3.695.0
+  resolution: "@aws-sdk/client-cloudformation@npm:3.695.0"
   dependencies:
     "@aws-crypto/sha256-browser": "npm:5.2.0"
     "@aws-crypto/sha256-js": "npm:5.2.0"
@@ -2174,7 +2174,7 @@ __metadata:
     "@types/uuid": "npm:^9.0.1"
     tslib: "npm:^2.6.2"
     uuid: "npm:^9.0.1"
-  checksum: 10c0/d8266ac3a944870d774647b11dbb4eeb3e89f0abb3b5518a461adc17e4815f94f05d3a2973249c598eb21f6b4694ea9c522c27c031b75eea561c5d52611cc205
+  checksum: 10c0/f85e5f9da23b1c98b998b8488236f50cca54cd30c69173b3248292783e85937a1b35ab54b92d30dc3375082c5e0ebd7c753341aa9a57e743c6a5fdba310afdc3
   languageName: node
   linkType: hard
 
@@ -17857,7 +17857,7 @@ __metadata:
     "@aws-amplify/backend-cli": "npm:1.4.2"
     "@aws-amplify/core": "npm:6.5.3"
     "@aws-amplify/ui-angular": "npm:5.0.30"
-    "@aws-sdk/client-cloudformation": "npm:3.693.0"
+    "@aws-sdk/client-cloudformation": "npm:3.695.0"
     "@aws-sdk/client-s3": "npm:3.693.0"
     "@aws-sdk/client-sso-oidc": "npm:3.693.0"
     "@aws-sdk/client-sts": "npm:3.693.0"
