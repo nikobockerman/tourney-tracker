@@ -50,3 +50,13 @@ jobs:
           reqs=$(yarn explain peer-requirements)
           echo "$reqs" | grep '✘' || true
           echo "$reqs" | grep -q '✘' && exit 1 || exit 0
+      - name: Validate angular.json schema file exists
+        # Schema file is invalid and validating against it doesn't work
+        run: |
+          schemaFile=$(cat angular.json | jq -r '.["$schema"]')
+          if [ ! -f "$schemaFile" ]; then
+            echo "Schema file not found: $schemaFile"
+            exit 1
+          else
+            echo "Schema file exists: $schemaFile"
+          fi
