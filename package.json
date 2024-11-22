@@ -43,7 +43,7 @@
     "@angular-eslint/template-parser": "18.4.1",
     "@angular/cli": "18.2.12",
     "@angular/compiler-cli": "18.2.12",
-    "@aws-amplify/backend": "1.7.0",
+    "@aws-amplify/backend": "1.8.0",
     "@aws-amplify/backend-cli": "1.4.2",
     "@aws-sdk/client-cloudformation": "3.696.0",
     "@aws-sdk/client-s3": "3.696.0",
