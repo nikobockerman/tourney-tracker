@@ -20,7 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              ".yarn/unplugged/@aws-amplify-ui-angular-virtual-2d32fc85a2/node_modules/@aws-amplify/ui-angular/theme.css",
+              ".yarn/unplugged/@aws-amplify-ui-angular-virtual-491d76535d/node_modules/@aws-amplify/ui-angular/theme.css",
               "src/styles.css"
             ],
             "scripts": [],
