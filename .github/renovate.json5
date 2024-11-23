@@ -1,6 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:best-practices", "config:js-app"],
+  extends: ["config:best-practices", "config:js-app", "npm:unpublishSafe"],
   lockFileMaintenance: {
     enabled: true,
   },
@@ -22,11 +22,6 @@
       extends: ["monorepo:angular", "monorepo:angular-cli"],
       matchUpdateTypes: ["major"],
       groupName: "major-angular",
-    },
-    {
-      description: "Prevent holding broken npm packages",
-      matchDatasources: ["npm"],
-      minimumReleaseAge: "3 days",
     },
   ],
 }
