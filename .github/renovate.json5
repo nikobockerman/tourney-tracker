@@ -1,6 +1,11 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:best-practices", "config:js-app", "npm:unpublishSafe"],
+  extends: [
+    "config:best-practices",
+    "config:js-app",
+    "npm:unpublishSafe",
+    "security:openssf-scorecard",
+  ],
   lockFileMaintenance: {
     enabled: true,
   },
