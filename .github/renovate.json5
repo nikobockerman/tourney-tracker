@@ -23,9 +23,15 @@
       groupName: "amplify-backend",
     },
     {
-      description: "Group angular and angular-cli together for major updates",
-      extends: ["monorepo:angular", "monorepo:angular-cli"],
+      description: "Group angular related packages together for major updates",
+      extends: [
+        "monorepo:angular",
+        "monorepo:angular-cli",
+        "monorepo:angular-eslint",
+      ],
+      matchPackageNames: ["zone.js"],
       matchUpdateTypes: ["major"],
+      dependencyDashboardApproval: true,
       groupName: "major-angular",
     },
   ],
