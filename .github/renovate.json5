@@ -30,7 +30,6 @@
         "monorepo:angular-eslint",
       ],
       matchUpdateTypes: ["major"],
-      dependencyDashboardApproval: true,
       groupName: "major-angular",
     },
   ],
