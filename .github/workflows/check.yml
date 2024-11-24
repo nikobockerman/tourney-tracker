@@ -19,11 +19,11 @@ jobs:
       - name: Setup project
         uses: ./.github/actions/yarn-project-setup
       - name: Format check
-        run: yarn run format
+        run: yarn run check:prettier
       - name: Create empty amplify_outputs.json to avoid errors
         run: echo '{}' > amplify_outputs.json
       - name: Lint
-        run: yarn run lint
+        run: yarn run check:eslint
 
   angular-build:
     name: Angular build
@@ -36,7 +36,7 @@ jobs:
       - name: Create empty amplify_outputs.json to avoid errors
         run: echo '{}' > amplify_outputs.json
       - name: Build angular
-        run: yarn run build
+        run: yarn run ng:build
 
   yarn-and-dependencies:
     name: Verify yarn and dependencies are set up correctly
@@ -56,7 +56,7 @@ jobs:
             exit 1
           fi
       - name: Check for duplicate dependencies
-        run: yarn dedupe --check
+        run: yarn run check:yarn:dedupe
       - name: Validate peer requirements are defined
         run: |
           reqs=$(yarn explain peer-requirements)
