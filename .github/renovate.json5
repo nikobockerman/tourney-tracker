@@ -29,7 +29,6 @@
         "monorepo:angular-cli",
         "monorepo:angular-eslint",
       ],
-      matchPackageNames: ["zone.js"],
       matchUpdateTypes: ["major"],
       dependencyDashboardApproval: true,
       groupName: "major-angular",
