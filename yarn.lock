@@ -1775,11 +1775,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/ui-angular@npm:5.0.31":
-  version: 5.0.31
-  resolution: "@aws-amplify/ui-angular@npm:5.0.31"
+"@aws-amplify/ui-angular@npm:5.0.32":
+  version: 5.0.32
+  resolution: "@aws-amplify/ui-angular@npm:5.0.32"
   dependencies:
-    "@aws-amplify/ui": "npm:6.6.6"
+    "@aws-amplify/ui": "npm:6.7.0"
     nanoid: "npm:3.1.31"
     qrcode: "npm:1.5.0"
     tslib: "npm:^2.5.2"
@@ -1787,27 +1787,27 @@ __metadata:
   peerDependencies:
     "@angular/common": ">= 14.0.0"
     "@angular/core": ">= 14.0.0"
-    aws-amplify: ^6.6.5
+    aws-amplify: ^6.9.0
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/b4be3515f0df227db21b4952ed5b89b23ab69e62361f4e3de37e4dbbe8376e3b8d3212e2acba2c8eca344bba42ac3758b1fcbe4fdac74a85c8f95327525253f6
+  checksum: 10c0/ad35a2b52981f196777a2ae6eb151383d501eda2245a3ae08ea7af9482e2797582aa8610e59c8988f3bd32ba481488eda54c94d7b61c0898215ef1995fcf138c
   languageName: node
   linkType: hard
 
-"@aws-amplify/ui@npm:6.6.6":
-  version: 6.6.6
-  resolution: "@aws-amplify/ui@npm:6.6.6"
+"@aws-amplify/ui@npm:6.7.0":
+  version: 6.7.0
+  resolution: "@aws-amplify/ui@npm:6.7.0"
   dependencies:
     csstype: "npm:^3.1.1"
     lodash: "npm:4.17.21"
     tslib: "npm:^2.5.2"
   peerDependencies:
     "@aws-amplify/core": "*"
-    aws-amplify: ^6.6.5
+    aws-amplify: ^6.9.0
     xstate: ^4.33.6
   peerDependenciesMeta:
     xstate:
       optional: true
-  checksum: 10c0/2c2c4b45dd5deff4dc0db9a6626772601315faabddc2cabba326b7abb7e7f12d2274b121a56eed010b507d5848a05264c2719de1ab22195e90c427e923961bb0
+  checksum: 10c0/f9b64248764228cdadc2afe3b420865730e593b8bc8d3d1480be8a33a8cef4ad725b58ca9ccdbc1bc945187982e13a880cf219b2f869491288a5cb3af64e4217
   languageName: node
   linkType: hard
 
@@ -18277,7 +18277,7 @@ __metadata:
     "@aws-amplify/backend": "npm:1.8.0"
     "@aws-amplify/backend-cli": "npm:1.4.2"
     "@aws-amplify/core": "npm:6.6.0"
-    "@aws-amplify/ui-angular": "npm:5.0.31"
+    "@aws-amplify/ui-angular": "npm:5.0.32"
     "@aws-sdk/client-cloudformation": "npm:3.696.0"
     "@aws-sdk/client-s3": "npm:3.697.0"
     "@aws-sdk/client-sso-oidc": "npm:3.696.0"
