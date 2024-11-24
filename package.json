@@ -2,16 +2,15 @@
   "name": "tourney-tracker",
   "version": "1.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve ${NG_SERVE_HOST_ARG}",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "eslint .",
-    "lint:fix": "yarn run lint -- --fix",
-    "format": "prettier --check .",
-    "format:fix": "yarn run format -- --write",
-    "renovate:config": "yarn dlx -p renovate --quiet renovate-config-validator --strict"
+    "ng:serve": "ng serve ${NG_SERVE_HOST_ARG}",
+    "ng:build": "ng build",
+    "fix:eslint": "yarn run check:eslint -- --fix",
+    "fix:prettier": "yarn run check:prettier -- --write",
+    "fix": "yarn run fix:eslint && yarn run fix:prettier",
+    "check:eslint": "eslint .",
+    "check:prettier": "prettier --check .",
+    "check:renovateconfig": "yarn dlx -p renovate --quiet renovate-config-validator --strict",
+    "check": "yarn run check:eslint && yarn run check:prettier && yarn run check:renovateconfig"
   },
   "private": true,
   "engines": {
