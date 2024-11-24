@@ -56,7 +56,7 @@ jobs:
             exit 1
           fi
       - name: Check for duplicate dependencies
-        run: yarn dedupe --check
+        run: yarn run check:yarn:dedupe
       - name: Validate peer requirements are defined
         run: |
           reqs=$(yarn explain peer-requirements)

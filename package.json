@@ -7,10 +7,11 @@
     "fix:eslint": "yarn run check:eslint --fix",
     "fix:prettier": "yarn run check:prettier --write",
     "fix": "npm-run-all --parallel --print-label 'fix:*'",
+    "check:yarn:dedupe": "yarn dedupe --check",
     "check:eslint": "eslint .",
     "check:prettier": "prettier --check .",
     "check:renovateconfig": "yarn dlx -p renovate --quiet renovate-config-validator --strict",
-    "check": "npm-run-all --parallel --print-label 'check:*'",
+    "check": "npm-run-all --parallel --print-label 'check:**'",
     "all": "yarn install && yarn run check && yarn run ng:build"
   },
   "private": true,
