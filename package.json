@@ -2,6 +2,7 @@
   "name": "tourney-tracker",
   "version": "1.0.0",
   "scripts": {
+    "amplify:deploy": "amplify sandbox --once",
     "ng:serve": "ng serve ${NG_SERVE_HOST_ARG}",
     "ng:build": "ng build",
     "fix:eslint": "yarn run check:eslint --fix",
