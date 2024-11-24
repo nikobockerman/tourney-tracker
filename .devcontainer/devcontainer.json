@@ -10,7 +10,7 @@
       "installYarnUsingApt": false
     },
     "ghcr.io/lukewiwa/features/shellcheck:0": {},
-    "./yarn-persistent-cache": {}
+    "ghcr.io/nikobockerman/devcontainer-features/yarn-persistent-cache:1": {}
   },
   "onCreateCommand": "sh .devcontainer/onCreate.sh",
   "updateContentCommand": "yarn",
