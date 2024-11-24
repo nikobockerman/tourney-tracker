@@ -4,9 +4,8 @@
   "scripts": {
     "ng:serve": "ng serve ${NG_SERVE_HOST_ARG}",
     "ng:build": "ng build",
-    "fix:eslint": "yarn run check:eslint -- --fix",
-    "fix:prettier": "yarn run check:prettier -- --write",
-    "fix": "yarn run fix:eslint && yarn run fix:prettier",
+    "fix:eslint": "yarn run check:eslint --fix",
+    "fix:prettier": "yarn run check:prettier --write",
     "check:eslint": "eslint .",
     "check:prettier": "prettier --check .",
     "check:renovateconfig": "yarn dlx -p renovate --quiet renovate-config-validator --strict",
