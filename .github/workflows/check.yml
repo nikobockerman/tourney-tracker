@@ -1,4 +1,4 @@
-name: CI
+name: CI - Checks
 
 on:
   workflow_dispatch:
@@ -10,30 +10,42 @@ on:
       - main
 
 jobs:
-  ci:
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - name: Enable corepack to install yarn
-        run: corepack enable
-      - name: Setup node
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
-        with:
-          node-version: 22
-          cache: yarn
-      - name: Install yarn and project dependencies
-        run: yarn install --immutable
+        uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
       - name: Format check
         run: yarn run format
       - name: Create empty amplify_outputs.json to avoid errors
         run: echo '{}' > amplify_outputs.json
       - name: Lint
         run: yarn run lint
+
+  angular-build:
+    name: Angular build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
+      - name: Create empty amplify_outputs.json to avoid errors
+        run: echo '{}' > amplify_outputs.json
       - name: Build angular
         run: yarn run build
-      - name: Renovate config validation
-        run: yarn run renovate:config
+
+  yarn-and-dependencies:
+    name: Verify yarn and dependencies are set up correctly
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
       - name: Validate Yarn install does not contain errors
         run: |
           errors=$(yarn install --json | jq 'select(.displayName != "YN0000")')
@@ -50,8 +62,26 @@ jobs:
           reqs=$(yarn explain peer-requirements)
           echo "$reqs" | grep '✘' || true
           echo "$reqs" | grep -q '✘' && exit 1 || exit 0
+
+  renovate-config-validator:
+    name: Renovate config validator
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Renovate config validation
+        uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.0
+
+  validate-angular-json:
+    name: Validate angular.json
+    # Schema file is invalid and validating against it doesn't work
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
       - name: Validate angular.json schema file exists
-        # Schema file is invalid and validating against it doesn't work
         run: |
           schemaFile=$(cat angular.json | jq -r '.["$schema"]')
           if [ ! -f "$schemaFile" ]; then
