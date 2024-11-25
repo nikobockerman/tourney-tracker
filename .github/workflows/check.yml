@@ -46,6 +46,13 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - name: Setup project
         uses: ./.github/actions/yarn-project-setup
+      - name: Check for duplicate dependencies
+        run: yarn run check:yarn:dedupe
+      - name: Validate peer requirements are defined
+        run: |
+          reqs=$(yarn explain peer-requirements)
+          echo "$reqs" | grep '✘' || true
+          echo "$reqs" | grep -q '✘' && exit 1 || exit 0
       - name: Validate Yarn install does not contain errors
         run: |
           errors=$(yarn install --json | jq 'select(.displayName != "YN0000")')
@@ -55,13 +62,6 @@ jobs:
             echo "$errors"
             exit 1
           fi
-      - name: Check for duplicate dependencies
-        run: yarn run check:yarn:dedupe
-      - name: Validate peer requirements are defined
-        run: |
-          reqs=$(yarn explain peer-requirements)
-          echo "$reqs" | grep '✘' || true
-          echo "$reqs" | grep -q '✘' && exit 1 || exit 0
 
   renovate-config-validator:
     name: Renovate config validator
