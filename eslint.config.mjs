@@ -1,14 +1,21 @@
 // @ts-check
 
+import { includeIgnoreFile } from "@eslint/compat";
 import eslintPkg from "@eslint/js";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 import * as tseslint from "typescript-eslint";
 import * as angular from "angular-eslint";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, ".gitignore");
+
 const { configs: eslintConfigs } = eslintPkg;
 
 export default tseslint.config(
-  {
-    ignores: [".amplify/", ".angular/", "dist/", ".pnp.*", ".yarn/"],
-  },
+  includeIgnoreFile(gitignorePath),
   {
     files: ["**/*.ts"],
     extends: [
