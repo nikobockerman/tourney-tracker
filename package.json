@@ -53,6 +53,7 @@
     "@aws-sdk/client-sso-oidc": "3.699.0",
     "@aws-sdk/client-sts": "3.699.0",
     "@aws-sdk/types": "3.696.0",
+    "@eslint/compat": "1.2.3",
     "@eslint/js": "9.15.0",
     "@types/jasmine": "5.1.4",
     "@types/react": "18.3.12",
