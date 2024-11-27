@@ -18,9 +18,9 @@
       pinDigests: false,
     },
     {
-      description: "Group amplify backend and backend-cli together",
-      matchPackageNames: ["@aws-amplify/backend", "@aws-amplify/backend-cli"],
       groupName: "amplify-backend",
+      description: "Monorepo: amplify-backend",
+      matchSourceUrls: ["https://github.com/aws-amplify/amplify-backend"],
     },
     {
       description: "Group angular related packages together for major updates",
