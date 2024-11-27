@@ -23,6 +23,11 @@
       matchSourceUrls: ["https://github.com/aws-amplify/amplify-backend"],
     },
     {
+      groupName: "amplify-js",
+      description: "Monorepo: amplify-js",
+      matchSourceUrls: ["https://github.com/aws-amplify/amplify-js"],
+    },
+    {
       description: "Group angular related packages together for major updates",
       extends: [
         "monorepo:angular",
