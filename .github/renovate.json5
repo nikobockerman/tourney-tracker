@@ -23,6 +23,11 @@
       matchSourceUrls: ["https://github.com/aws-amplify/amplify-backend"],
     },
     {
+      groupName: "amplify-backend",
+      description: "Monorepo: amplify-backend, packages without specified source url",
+      matchPackageNames: ["@aws-amplify/backend"],
+    },
+    {
       groupName: "amplify-js",
       description: "Monorepo: amplify-js",
       matchSourceUrls: ["https://github.com/aws-amplify/amplify-js"],
