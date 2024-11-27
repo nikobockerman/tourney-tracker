@@ -28,6 +28,11 @@
       matchSourceUrls: ["https://github.com/aws-amplify/amplify-js"],
     },
     {
+      groupName: "amplify-ui",
+      description: "Monorepo: amplify-ui",
+      matchSourceUrls: ["https://github.com/aws-amplify/amplify-ui"],
+    },
+    {
       description: "Group angular related packages together for major updates",
       extends: [
         "monorepo:angular",
