@@ -1,11 +1,11 @@
 name: CI - Checks
 
 on:
-  workflow_dispatch:
+  pull_request:
   push:
     branches:
       - main
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   lint:
