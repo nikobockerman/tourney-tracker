@@ -1,0 +1,27 @@
+name: Build - Angular
+
+on:
+  pull_request:
+    paths-ignore:
+      - ".editorconfig"
+      - ".github/**"
+      - "eslint.config.mjs"
+      - "LICENSE"
+      - "NOTES.md"
+      - "README.md"
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  angular-build:
+    name: Angular build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
+      - name: Create empty amplify_outputs.json to avoid errors
+        run: echo '{}' > amplify_outputs.json
+      - name: Build angular
+        run: yarn run ng:build

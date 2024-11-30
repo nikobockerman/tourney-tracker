@@ -1,0 +1,31 @@
+name: Check - Angular.json
+
+on:
+  pull_request:
+    paths:
+      - ".yarnrc.yml"
+      - "angular.json"
+      - "package.json"
+      - "yarn.lock"
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  validate-angular-json:
+    name: Validate angular.json
+    # Schema file is invalid and validating against it doesn't work
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
+      - name: Validate angular.json schema file exists
+        run: |
+          schemaFile=$(cat angular.json | jq -r '.["$schema"]')
+          if [ ! -f "$schemaFile" ]; then
+            echo "Schema file not found: $schemaFile"
+            exit 1
+          else
+            echo "Schema file exists: $schemaFile"
+          fi

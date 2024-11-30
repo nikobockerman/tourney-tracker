@@ -1,0 +1,23 @@
+name: Check - Github actions
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**.yaml"
+      - ".github/actions/**"
+      - ".yarnrc.yml"
+      - "package.json"
+      - "yarn.lock"
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  actions:
+    name: Check Github actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Setup project
+        uses: ./.github/actions/yarn-project-setup
+      - name: Check Github actions
+        run: yarn run check:github-actions

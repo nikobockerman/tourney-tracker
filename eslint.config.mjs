@@ -14,6 +14,8 @@ const gitignorePath = path.resolve(__dirname, ".gitignore");
 
 const { configs: eslintConfigs } = eslintPkg;
 
+// The 'files' patterns need to match paths in check-eslint.yaml
+
 export default tseslint.config(
   includeIgnoreFile(gitignorePath),
   {
