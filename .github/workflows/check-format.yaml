@@ -2,12 +2,7 @@ name: Check - Format
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
-  schedule:
-    # Run every Monday at 00:30 UTC
-    - cron: "30 0 * * 1"
+  workflow_call:
   workflow_dispatch:
 
 jobs:
