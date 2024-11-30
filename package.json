@@ -10,6 +10,7 @@
     "fix": "npm-run-all --parallel --print-label 'fix:*'",
     "check:yarn:dedupe": "yarn dedupe --check",
     "check:eslint": "eslint .",
+    "check:github-actions": "git ls-files '.github/**.yaml' | xargs -t -I {} action-validator {}",
     "check:prettier": "prettier --check .",
     "check:renovateconfig": "yarn dlx -p renovate --quiet renovate-config-validator --strict",
     "check:shellcheck": "shellcheck $(git ls-files | grep '.sh$')",
@@ -37,6 +38,8 @@
     "zone.js": "0.14.10"
   },
   "devDependencies": {
+    "@action-validator/cli": "0.6.0",
+    "@action-validator/core": "0.6.0",
     "@angular-devkit/build-angular": "18.2.12",
     "@angular-devkit/core": "18.2.12",
     "@angular-devkit/schematics": "18.2.12",
