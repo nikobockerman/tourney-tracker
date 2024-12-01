@@ -3,6 +3,8 @@ name: Check - Yarn and dependencies
 on:
   pull_request:
     paths:
+      - ".github/actions/yarn-project-setup/**"
+      - ".github/workflows/check-yarn.yaml"
       - ".yarnrc.yml"
       - "package.json"
       - "yarn.lock"

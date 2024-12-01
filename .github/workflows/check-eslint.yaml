@@ -6,6 +6,8 @@ on:
       # These need to match paths in eslint.config.mjs
       - "**/*.ts"
       - "**/*.html"
+      - ".github/actions/yarn-project-setup/**"
+      - ".github/workflows/check-eslint.yaml"
   workflow_call:
   workflow_dispatch:
 

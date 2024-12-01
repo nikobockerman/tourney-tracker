@@ -3,6 +3,8 @@ name: Check - Angular.json
 on:
   pull_request:
     paths:
+      - ".github/actions/yarn-project-setup/**"
+      - ".github/workflows/check-angular-json.yaml"
       - ".yarnrc.yml"
       - "angular.json"
       - "package.json"
