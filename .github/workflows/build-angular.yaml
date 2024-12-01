@@ -5,6 +5,8 @@ on:
     paths-ignore:
       - ".editorconfig"
       - ".github/**"
+      - "!.github/workflows/build-angular.yaml"
+      - "!.github/actions/yarn-project-setup/**"
       - "eslint.config.mjs"
       - "LICENSE"
       - "NOTES.md"
