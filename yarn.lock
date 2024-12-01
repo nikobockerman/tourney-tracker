@@ -8753,10 +8753,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jasmine@npm:5.1.4":
-  version: 5.1.4
-  resolution: "@types/jasmine@npm:5.1.4"
-  checksum: 10c0/4b8d27182e62f5003db1f1f174a810ace704e411cbfd0bc41edbaacf307246aec1f9bd20812846700198fc881268834ffde1d5301f819b1ba7caac9662534ceb
+"@types/jasmine@npm:5.1.5":
+  version: 5.1.5
+  resolution: "@types/jasmine@npm:5.1.5"
+  checksum: 10c0/904a2a6bfe7478478ec73d502708dc4b4cc46fa554c459cee3e0be01efda96fba7d26ef8bec2f246d9163cc517407b135acabcf6f076c11aa514ed9b79bc67e5
   languageName: node
   linkType: hard
 
@@ -18059,7 +18059,7 @@ __metadata:
     "@aws-sdk/types": "npm:3.696.0"
     "@eslint/compat": "npm:1.2.3"
     "@eslint/js": "npm:9.15.0"
-    "@types/jasmine": "npm:5.1.4"
+    "@types/jasmine": "npm:5.1.5"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/types": "npm:8.16.0"
