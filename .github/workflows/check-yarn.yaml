@@ -47,7 +47,7 @@ jobs:
         uses: ./.github/actions/yarn-project-setup
       - name: Yarn install output check
         run: |
-          errors=$(yarn install --json | jq 'select(.displayName != "YN0000")')
+          errors=$(FORCE_COLOR=0 yarn install --json | jq 'select(.displayName != "YN0000")')
           error_count=$(echo "$errors" | jq -s 'length')
           if [ "$error_count" -gt 0 ]; then
             echo "Detected Yarn install errors: $error_count"
