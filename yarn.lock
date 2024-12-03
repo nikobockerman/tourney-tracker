@@ -18040,7 +18040,6 @@ __metadata:
     "@angular-devkit/schematics": "npm:18.2.12"
     "@angular-eslint/builder": "npm:18.4.2"
     "@angular-eslint/eslint-plugin": "npm:18.4.2"
-    "@angular-eslint/schematics": "npm:18.4.2"
     "@angular-eslint/template-parser": "npm:18.4.2"
     "@angular/animations": "npm:18.2.13"
     "@angular/cli": "npm:18.2.12"
