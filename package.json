@@ -45,7 +45,6 @@
     "@angular-devkit/schematics": "18.2.12",
     "@angular-eslint/builder": "18.4.2",
     "@angular-eslint/eslint-plugin": "18.4.2",
-    "@angular-eslint/template-parser": "18.4.2",
     "@angular/cli": "18.2.12",
     "@angular/compiler-cli": "18.2.13",
     "@aws-amplify/backend": "1.8.0",
