@@ -314,17 +314,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/animations@npm:18.2.13":
-  version: 18.2.13
-  resolution: "@angular/animations@npm:18.2.13"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/core": 18.2.13
-  checksum: 10c0/a88b640db707e2ea1b5cde419d593f462db48ac826a7d05e505c75f9deca5d6cfe62db43516d7133ee5dd15ca6d3b0414284ae2929861b4cec89e6e95eb590e5
-  languageName: node
-  linkType: hard
-
 "@angular/build@npm:18.2.12":
   version: 18.2.12
   resolution: "@angular/build@npm:18.2.12"
@@ -475,34 +464,6 @@ __metadata:
     rxjs: ^6.5.3 || ^7.4.0
     zone.js: ~0.14.10
   checksum: 10c0/62d05acebb8fdcaaba99860465e1214daade8e35751d344a02d5f583f28740bb11e99274c33e490d78abbd19e4eb90805d6bf4719d5bd05d8c7c8d830a3c871d
-  languageName: node
-  linkType: hard
-
-"@angular/forms@npm:18.2.13":
-  version: 18.2.13
-  resolution: "@angular/forms@npm:18.2.13"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": 18.2.13
-    "@angular/core": 18.2.13
-    "@angular/platform-browser": 18.2.13
-    rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/e1560c7a2cb273319364a23685277736e1a227603f6f62820661d6dbfe4946d763053a0ddf5902020fc855d9c5d7b6c86ca8bab59a1e9033b05aa41b66111d22
-  languageName: node
-  linkType: hard
-
-"@angular/platform-browser-dynamic@npm:18.2.13":
-  version: 18.2.13
-  resolution: "@angular/platform-browser-dynamic@npm:18.2.13"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": 18.2.13
-    "@angular/compiler": 18.2.13
-    "@angular/core": 18.2.13
-    "@angular/platform-browser": 18.2.13
-  checksum: 10c0/d7e8518bdf894bbaab88cfc403059ad118faa82c44e6684fad8ea2067ca214bbe7bd19722ca4e136199f03d0bd7b0baab8f5138867d09e394f1ecd7c55349c2d
   languageName: node
   linkType: hard
 
@@ -18038,17 +17999,12 @@ __metadata:
     "@angular-devkit/build-angular": "npm:18.2.12"
     "@angular-devkit/core": "npm:18.2.12"
     "@angular-devkit/schematics": "npm:18.2.12"
-    "@angular-eslint/builder": "npm:18.4.2"
-    "@angular-eslint/eslint-plugin": "npm:18.4.2"
-    "@angular/animations": "npm:18.2.13"
     "@angular/cli": "npm:18.2.12"
     "@angular/common": "npm:18.2.13"
     "@angular/compiler": "npm:18.2.13"
     "@angular/compiler-cli": "npm:18.2.13"
     "@angular/core": "npm:18.2.13"
-    "@angular/forms": "npm:18.2.13"
     "@angular/platform-browser": "npm:18.2.13"
-    "@angular/platform-browser-dynamic": "npm:18.2.13"
     "@angular/router": "npm:18.2.13"
     "@aws-amplify/backend": "npm:1.8.0"
     "@aws-amplify/backend-cli": "npm:1.4.2"
