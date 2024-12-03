@@ -1758,11 +1758,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-amplify/ui-angular@npm:5.0.32":
-  version: 5.0.32
-  resolution: "@aws-amplify/ui-angular@npm:5.0.32"
+"@aws-amplify/ui-angular@npm:5.0.33":
+  version: 5.0.33
+  resolution: "@aws-amplify/ui-angular@npm:5.0.33"
   dependencies:
-    "@aws-amplify/ui": "npm:6.7.0"
+    "@aws-amplify/ui": "npm:6.7.1"
     nanoid: "npm:3.1.31"
     qrcode: "npm:1.5.0"
     tslib: "npm:^2.5.2"
@@ -1772,13 +1772,13 @@ __metadata:
     "@angular/core": ">= 14.0.0"
     aws-amplify: ^6.9.0
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/ad35a2b52981f196777a2ae6eb151383d501eda2245a3ae08ea7af9482e2797582aa8610e59c8988f3bd32ba481488eda54c94d7b61c0898215ef1995fcf138c
+  checksum: 10c0/96ecf5221d75bde5684ee62d08c8be15ffe585f70cf3984a14eac0093484a00b13efd81911f683071acdb528a077138b0955432d8771b00c94ddf2707d21702e
   languageName: node
   linkType: hard
 
-"@aws-amplify/ui@npm:6.7.0":
-  version: 6.7.0
-  resolution: "@aws-amplify/ui@npm:6.7.0"
+"@aws-amplify/ui@npm:6.7.1":
+  version: 6.7.1
+  resolution: "@aws-amplify/ui@npm:6.7.1"
   dependencies:
     csstype: "npm:^3.1.1"
     lodash: "npm:4.17.21"
@@ -1790,7 +1790,7 @@ __metadata:
   peerDependenciesMeta:
     xstate:
       optional: true
-  checksum: 10c0/f9b64248764228cdadc2afe3b420865730e593b8bc8d3d1480be8a33a8cef4ad725b58ca9ccdbc1bc945187982e13a880cf219b2f869491288a5cb3af64e4217
+  checksum: 10c0/64a13a94c3f821b0d48bed27d04411f8a55ff5f580ee8f08bceb848107371a597c192938bde12d737e158686668ee19814671b3f6d15a9a0c23b0df2f7f34ddf
   languageName: node
   linkType: hard
 
@@ -18076,7 +18076,7 @@ __metadata:
     "@aws-amplify/backend": "npm:1.8.0"
     "@aws-amplify/backend-cli": "npm:1.4.2"
     "@aws-amplify/core": "npm:6.7.0"
-    "@aws-amplify/ui-angular": "npm:5.0.32"
+    "@aws-amplify/ui-angular": "npm:5.0.33"
     "@aws-sdk/client-cloudformation": "npm:3.699.0"
     "@aws-sdk/client-s3": "npm:3.701.0"
     "@aws-sdk/client-sso-oidc": "npm:3.699.0"
