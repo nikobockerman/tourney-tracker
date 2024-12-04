@@ -19,7 +19,6 @@ Amplify.configure(outputs);
   changeDetection: ChangeDetectionStrategy.Default,
   imports: [RouterOutlet, MatchesComponent, AmplifyAuthenticatorModule],
   selector: 'app-root',
-  standalone: true,
   styleUrl: './app.component.css',
   templateUrl: './app.component.html',
 })

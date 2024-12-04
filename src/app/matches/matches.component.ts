@@ -9,7 +9,6 @@ import type { Schema } from '../../../amplify/data/resource';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule],
   selector: 'app-matches',
-  standalone: true,
   styleUrl: './matches.component.css',
   templateUrl: './matches.component.html',
 })
