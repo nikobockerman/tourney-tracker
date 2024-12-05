@@ -2737,9 +2737,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:3.701.0, @aws-sdk/client-s3@npm:^3.624.0":
-  version: 3.701.0
-  resolution: "@aws-sdk/client-s3@npm:3.701.0"
+"@aws-sdk/client-s3@npm:3.703.0, @aws-sdk/client-s3@npm:^3.624.0":
+  version: 3.703.0
+  resolution: "@aws-sdk/client-s3@npm:3.703.0"
   dependencies:
     "@aws-crypto/sha1-browser": "npm:5.2.0"
     "@aws-crypto/sha256-browser": "npm:5.2.0"
@@ -2799,7 +2799,7 @@ __metadata:
     "@smithy/util-utf8": "npm:^3.0.0"
     "@smithy/util-waiter": "npm:^3.1.9"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/b7eeb84dddb1c5581de6210ecdfd943a1f94582d30bf58e7ce2ff7ecdbfee68edf01838c0f78f015ebfb134f60cb27d6827f85b78ad8b90cb6516a072425987f
+  checksum: 10c0/eba492878a32cad0709383af4d56b9df95e8de02d99963cb9e3bdb60ade49c8617c857340bd0348711f2212b9ca6d9f7dc00ea80c001ac31afcdeee6824b702d
   languageName: node
   linkType: hard
 
@@ -18170,7 +18170,7 @@ __metadata:
     "@aws-amplify/core": "npm:6.7.0"
     "@aws-amplify/ui-angular": "npm:5.0.33"
     "@aws-sdk/client-cloudformation": "npm:3.699.0"
-    "@aws-sdk/client-s3": "npm:3.701.0"
+    "@aws-sdk/client-s3": "npm:3.703.0"
     "@aws-sdk/client-sso-oidc": "npm:3.699.0"
     "@aws-sdk/client-sts": "npm:3.699.0"
     "@aws-sdk/types": "npm:3.696.0"
