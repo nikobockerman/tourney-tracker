@@ -58,7 +58,7 @@
     "aws-cdk-lib": "2.171.1",
     "constructs": "10.4.2",
     "eslint": "9.16.0",
-    "jasmine-core": "5.4.0",
+    "jasmine-core": "5.5.0",
     "karma": "6.4.4",
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "2.2.1",
