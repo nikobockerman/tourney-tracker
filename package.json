@@ -43,7 +43,7 @@
     "@aws-amplify/backend": "1.8.0",
     "@aws-amplify/backend-cli": "1.4.2",
     "@aws-sdk/client-cloudformation": "3.699.0",
-    "@aws-sdk/client-s3": "3.703.0",
+    "@aws-sdk/client-s3": "3.705.0",
     "@aws-sdk/client-sso-oidc": "3.699.0",
     "@aws-sdk/client-sts": "3.699.0",
     "@aws-sdk/types": "3.696.0",
