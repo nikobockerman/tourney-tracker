@@ -40,7 +40,7 @@
     "@angular-devkit/build-angular": "19.0.4",
     "@angular/cli": "19.0.4",
     "@angular/compiler-cli": "19.0.3",
-    "@aws-amplify/backend": "1.8.0",
+    "@aws-amplify/backend": "1.9.0",
     "@aws-amplify/backend-cli": "1.4.3",
     "@aws-sdk/client-cloudformation": "3.699.0",
     "@aws-sdk/client-s3": "3.705.0",
